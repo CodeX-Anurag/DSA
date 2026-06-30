@@ -85,8 +85,46 @@ using namespace std ;
     // By for loop 
     for (int i = 1 ; i <= n ; i++){
       for (int j = 1 ; j <= n ; j++){
-        cout << i ;                    // because row ke sath i change ho raha hai es liye pattern samjho 
+        cout << i ;                    // kyuki es mein row wise print ho raha hai es liye pattern samjho 
       }
       cout << endl ;
     }
   }
+
+/* Que 3   123..  Print in this type 
+           123..  
+           123..          
+*/
+
+ int main (){
+    int n ;
+    cin >> n ;
+
+    
+    for (int i = 1 ; i <= n ; i++){
+      for (int j = 1 ; j <= n ; j++){
+        cout << j ;             // Kyuki es mein column wise print ho raha hai 
+      }
+      cout << endl ;
+    }
+  }
+
+/* Que 4   321...  Print in this type 
+           321...  
+           321...          
+*/
+ 
+ int main (){
+    int n ;
+    cin >> n ;
+
+    for (int i = 1 ; i <= n ; i++){
+      for (int j = 1 ; j <= n ; j++){
+        cout << n-j+1 ;                // let n=3 , j = 1  sp  3-1+1 = 3  ,n = 3 ,j = 2  so 3-2+1 = 2   
+       }
+      cout << endl ;
+    }
+  }
+
+
+
