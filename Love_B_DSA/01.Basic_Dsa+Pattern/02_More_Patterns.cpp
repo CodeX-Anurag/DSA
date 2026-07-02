@@ -367,24 +367,153 @@ using namespace std ;
               **
                *      tho es que mein space bhi print karna hoga 
  */
-    int main(){
+//     int main(){
+//     int n;
+//     cin >> n;
+
+//     for(int i = 1; i <= n; i++)
+//     {
+//         // Spaces
+//         for(int j = 1; j <= i - 1 ; j++)
+//         {
+//             cout << " ";
+//         }
+
+//         // Stars
+//         for(int j = 1; j <=  n - i + 1; j++)
+//         {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+//  }
+
+
+
+/* Que 18  1111         Print in this type 
+           _222     
+           __33
+           ___4     tho es que mein space bhi print karna hoga 
+ */
+
+//  int main (){
+//     int n ; 
+//     cin >> n ; 
+    
+//     for( int i = 1 ; i <= n ; i++ ){
+//       for (int j = 1 ; j <= i -1  ; j++){
+//         cout<<" ";
+//       }
+
+//       for( int j = 1 ; j <= n - i + 1 ; j ++ ){
+//         cout<< i ;
+//       } 
+//       cout<<endl ;
+//     }
+//  }
+  
+  
+  
+/* Que 19  ___1          Print in this type 
+           __22
+           _333
+           4444   
+ */
+
+  // int main (){
+  //   int n ; 
+  //   cin >> n ;
+
+  //   for(int i = 1  ; i <= n ; i ++){
+  //     for (int j = 1 ; j <= n - i ; j++){
+  //       cout << " " ;
+  //     }
+
+  //     for(int j =1 ; j <= i ; j++){
+  //       cout << i ;
+  //     }
+  //     cout<<endl ;
+  //   }
+  // }
+
+
+/* Que 19    1234        Print in this type 
+             234_
+             34__
+             4___   
+ */
+  // int main (){
+  //   int n ; 
+  //   cin >> n ;
+
+  //   for(int i = 1  ; i <= n ; i ++){
+  //     for( int j = 1 ; j<= n - i + 1 ; j++){
+  //       cout<< i + j - 1  ;
+  //     }
+
+  //   for(int j = 1 ; j <= i - 1 ; j ++ ){
+  //     cout << " " ;
+  //   }
+  //   cout<<endl ; 
+  //   }
+  // }
+
+
+/* Que 20   ___1        Print in this type 
+            __23
+            _456
+           67910    
+ */
+  // int main (){
+  //   int n ; 
+  //   cin >> n ;
+
+  //   int count = 1;
+  //   for(int i = 1  ; i <= n ; i ++){
+  //     for( int j = 1 ; j<= n - i  ; j++){
+  //       cout<< " " ;
+  //     }
+  //        // int count = 1 ;  yaha likh ne se  1 , 12 ,123 , 1234 esa print hota kyuki space ke baad print ho raha hai 
+  //     for(int j = 1 ; j <= i ; j ++ ){
+  //     cout << count ;
+  //     count += 1 ; 
+  //   }
+  //   cout<<endl ; 
+  //   }
+  // }
+
+
+/* Que 21   ___1        Print in this type 
+            __121
+            _12321
+            1234321    
+ */
+  #include<iostream>
+using namespace std;
+
+int main()
+{
     int n;
     cin >> n;
 
-    for(int i = 1; i <= n; i++)
-    {
-        // Spaces
-        for(int j = 1; j <= i - 1 ; j++)
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n-i; j++)
         {
             cout << " ";
         }
 
-        // Stars
-        for(int j = 1; j <=  n - i + 1; j++)
+        // Increasing
+        for(int j = 1; j <= i; j++)
         {
-            cout << "*";
+            cout << j;
+        }
+
+        // Decreasing
+        for(int j = i-1; j >= 1; j--)
+        {
+            cout << j;
         }
         cout << endl;
     }
-    return 0;
  }
