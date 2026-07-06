@@ -479,6 +479,6 @@ int main()
         {
             continue;
         }
-        cout <<"Odd numbers are : "<<  i << " ";
+        cout <<  i << "is odd number "<< " ";
     }
 }
