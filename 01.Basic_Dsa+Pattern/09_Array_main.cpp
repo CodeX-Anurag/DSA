@@ -80,8 +80,6 @@
 
 /*2️⃣ Why arr[0] Changed in main()?
   
-  
-  
   "Why did arr[0] change?"*/
   
   
@@ -117,34 +115,20 @@
   Inside Main
   
   120 2 3
+
+
   Question
-  
-
-
   Why didn't it become
   
   1 2 3
   
   again?
   
-  Answer
-  
-  Because
-  
-  update()
-  
-  didn't receive a copy.
-  
-  It received the original array.
+  Answer ->Because  update()  didn't receive a copy.   -> It received the original array.
   
   Memory
   
-  Before
-  
-  main()
-  
-  arr
-  
+  Before   main()  arr
   +---+---+---+
   |1  |2  |3  |
   +---+---+---+
@@ -152,18 +136,15 @@
   Inside Function
   
   arr[0]=120
-  
   Memory becomes
-  
   +-----+---+---+
   |120  |2  |3  |
   +-----+---+---+
   
   Function ends.
   
-  Memory
-  
-  main()
+
+  Memory   main()
   
   +-----+---+---+
   |120  |2  |3  |
